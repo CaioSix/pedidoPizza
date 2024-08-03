@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria Pizzaboa</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Botão de pedidos -->
+    <div class="header">
+        <button id="ordersButton">Pedidos</button>
+    </div>
+
+    <div class="container">
+        <h1>Cardápio da Pizzaria Pizzaboa</h1>
+        <form id="orderForm">
+            <div class="pizza-options">
+                <label>
+                    <input type="radio" name="pizza" value="Pepperoni" required>
+                    <img src="https://www.cobsbread.com/us/wp-content/uploads/2022/09/Pepperoni-pizza-850x630-1.png" alt="Pizza de Pepperoni" class="pizza-image">
+                    Pepperoni
+                </label>
+                <label>
+                    <input type="radio" name="pizza" value="Marguerita" required>
+                    <img src="https://irp.cdn-website.com/33406c6e/dms3rep/multi/margherita-7d163fb8.jpg" alt="Pizza Marguerita" class="pizza-image">
+                    Marguerita
+                </label>
+                <label>
+                    <input type="radio" name="pizza" value="Quatro Queijos" required>
+                    <img src="https://alimentos10.com.br/wp-content/uploads/2023/06/imeretian-khachapuri-cheese-lemon-side-view-1.jpg" alt="Pizza Quatro Queijos" class="pizza-image">
+                    Quatro Queijos
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Telefone:</label>
+                <input type="text" id="phone" name="phone" required>
+            </div>
+            <button type="submit">Adicionar ao Carrinho</button>
+        </form>
+        <div id="alert" style="display:none;">Pedido adicionado ao carrinho!</div>
+    </div>
+</body>
+</html>

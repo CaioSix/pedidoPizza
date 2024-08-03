@@ -1,0 +1,76 @@
+/* styles.css */
+
+/* Estilo padrão */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://img.freepik.com/fotos-premium/imagem-de-pizza-de-tamanho-grande-fotografia-de-alta-definicao-papel-de-parede-de-fundo-criativo_993236-10638.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    text-align: right;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#loginButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#loginButton:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries para Responsividade */
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    #loginButton {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #loginButton {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    .order-item {
+        flex-direction: column; /* Empilha os itens da lista verticalmente */
+        margin-bottom: 10px;
+    }
+}

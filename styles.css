@@ -1,0 +1,90 @@
+/* styles.css */
+
+/* Fundo da página */
+body {
+    margin: 0;
+    padding: 0;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJIoJvxn4mmVLeNxLYZ9aQNhx2inXt3lS4Ug&s') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: right;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#ordersButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#ordersButton:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    margin: 100px auto 20px auto; /* Ajuste para não ficar atrás do cabeçalho fixo */
+    width: 80%;
+    max-width: 800px;
+}
+
+.pizza-options label {
+    display: block;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.pizza-image {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #218838;
+}
